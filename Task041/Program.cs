@@ -16,4 +16,11 @@ void CheckPositiveNumbers()
     }
     Console.WriteLine($"Чисел больше нуля: {result}");
 }
-CheckPositiveNumbers();
+try
+{
+   CheckPositiveNumbers(); 
+}
+catch
+{
+    Console.WriteLine("Надо вводить числа цифрами");
+}
